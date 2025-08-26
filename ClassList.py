@@ -5,11 +5,11 @@
 
 names = []      # Makes a list to store names
 while True:     # Initiate loop to keep asking for names
-    name = input("Enter a classmate's name (or type 'quit' to stop): ")
+    name = input("Enter the name of a class you are taking (or type 'quit' to stop): ")
     if name.lower() == 'quit':
         break
     names.append(name)
 
-print("These are your classmates: ")
+print("These are your classes: ")
 for all_names in names:         # all_names is a temp variable
     print(all_names)
