@@ -88,3 +88,27 @@ class Author:
 
 
 # Part 3------------------------------------------------------
+# Write the Student Class from the assigned reading
+# Add one more field: gpa, a float.
+# Write a main function to create some example Student objects with some example names, 
+# college_id and GPA values. Verify you can read the name, college ID and GPA for an example student.  
+# Verify when you print an example student, the GPA is included. 
+
+class Student:
+    def __init__(self, name, college_id, gpa):
+        self.name = name
+        self.college_id = college_id
+        self.gpa = gpa
+
+    def __str__(self):
+        return f'Name: {self.name}, College ID: {self.college_id}, GPA: {self.gpa}'
+
+
+def main2():
+    student1 = Student("Alice", "aa12345aa", 3.8)
+    student2 = Student("Bob", "bb1234bb", 3.5)
+
+    print(student1)
+    print(student2)
+
+main2()
