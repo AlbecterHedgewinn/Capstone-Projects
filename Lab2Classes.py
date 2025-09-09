@@ -112,3 +112,7 @@ def main2():
     print(student2)
 
 main2()
+
+# When defeining fields in a class, the type of each field is defined by the value assigned to it in the __init__ method.
+# in this case, gpa is defined as a float because it is assigned a floating-point number when creating Student objects in
+# the main2 function. This allows the gpa field to store decimal values, which is appropriate for representing a student's GPA.
