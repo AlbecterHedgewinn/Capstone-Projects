@@ -4,7 +4,7 @@
 def camelcase(sentence):
     title_case = sentence.title()
     upper_camel_case = title_case.replace(" ", "")
-    return upper_camel_case[o:1].lower() + upper_camel_case[1:]
+    return upper_camel_case[0:1].lower() + upper_camel_case[1:]
 
 def main():
     sentence = input("Enter your sentence: ")
